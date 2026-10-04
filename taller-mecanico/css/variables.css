@@ -1,0 +1,10 @@
+:root {
+  --color-primario: #c0391b;
+  --color-oscuro: #1f2933;
+  --color-fondo: #f4f1ec;
+  --color-tarjeta: #ffffff;
+  --color-borde: #d9d4cb;
+  --color-texto: #1f2933;
+  --radio: 10px;
+  --sombra: 0 2px 8px rgba(0, 0, 0, .1);
+}

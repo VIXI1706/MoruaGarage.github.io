@@ -1,0 +1,35 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", Arial, sans-serif; background: var(--color-fondo); color: var(--color-texto); }
+
+.encabezado { background: var(--color-oscuro); color: #fff; text-align: center; padding: 24px 16px; border-bottom: 5px solid var(--color-primario); }
+.encabezado p { opacity: .8; margin-top: 4px; }
+
+.contenedor { max-width: 1000px; margin: 24px auto; padding: 0 16px; display: grid; gap: 24px; grid-template-columns: 1fr 1fr; }
+@media (max-width: 800px) { .contenedor { grid-template-columns: 1fr; } }
+
+.tarjeta { background: var(--color-tarjeta); border-radius: var(--radio); box-shadow: var(--sombra); padding: 20px; }
+.tarjeta h2 { margin-bottom: 16px; color: var(--color-primario); }
+
+.formulario { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.campo { display: flex; flex-direction: column; gap: 4px; }
+.campo.ancho, .total, .formulario .btn { grid-column: 1 / -1; }
+label { font-size: .85rem; font-weight: 600; }
+input, textarea { padding: 8px; border: 1px solid var(--color-borde); border-radius: 6px; font: inherit; }
+input:focus, textarea:focus { outline: 2px solid var(--color-primario); }
+
+.trabajo { display: grid; grid-template-columns: 2fr 1fr auto; gap: 8px; margin-bottom: 8px; }
+.btn { background: var(--color-primario); color: #fff; border: 0; padding: 10px 16px; border-radius: 6px; font-weight: 600; cursor: pointer; }
+.btn:hover { filter: brightness(1.1); }
+.btn.secundario { background: var(--color-oscuro); width: fit-content; }
+.btn.quitar { background: #888; padding: 6px 10px; }
+
+.total { text-align: right; font-size: 1.3rem; background: var(--color-fondo); padding: 12px; border-radius: 6px; }
+.total strong { color: var(--color-primario); }
+
+.lista { display: flex; flex-direction: column; gap: 12px; }
+.registro { border: 1px solid var(--color-borde); border-left: 5px solid var(--color-primario); border-radius: 6px; padding: 12px; }
+.registro h3 { font-size: 1rem; }
+.registro p { font-size: .9rem; margin-top: 4px; }
+.registro .precio { font-weight: 700; color: var(--color-primario); }
+.registro .btn { margin-top: 8px; padding: 4px 10px; font-size: .8rem; }
+.vacio { color: #888; text-align: center; padding: 16px; }
